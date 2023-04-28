@@ -6,6 +6,7 @@ def connect_to_database():
     """Connects to the database and returns a cursor object"""
     conn = mysql.connector.connect(
         host="localhost",
+        port=3306,
         database="customerDB",
         user="admin",
         password="password1234!ABC"

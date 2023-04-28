@@ -26,9 +26,11 @@ Creation of the Database schema: `database/schema.sql`.
 * Generated the docker-compose.yml for us
 * Added missing variables etc.
 * Explained the difference between docker-compose/ dockerfile
+* Added an init sql script and command to the docker-compose
 
 ### What did we do?
 * Checked the script and changed the variables
+* Troubleshooting with help of ChatGPT
 
 ### Problems
 * Generated docker-compose.yml differed between conversations/ languages

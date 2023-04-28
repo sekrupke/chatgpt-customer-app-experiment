@@ -11,6 +11,8 @@ services:
       - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    command: [ "--init-file", "/docker-entrypoint-initdb.d/schema.sql" ]
     container_name: my-mysql-container
 
 volumes:

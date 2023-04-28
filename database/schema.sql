@@ -1,6 +1,4 @@
-CREATE DATABASE customerDB;
-
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password1234!ABC';
+CREATE USER IF NOT EXISTS 'admin'@'localhost' IDENTIFIED BY 'password1234!ABC';
 
 GRANT ALL PRIVILEGES ON customerDB.* TO 'admin'@'localhost';
 
