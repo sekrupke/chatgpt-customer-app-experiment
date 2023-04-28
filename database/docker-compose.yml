@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: customerDB
+      MYSQL_ROOT_PASSWORD: root_passwort_1234!
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    container_name: my-mysql-container
+
+volumes:
+  db-data:

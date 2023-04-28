@@ -21,6 +21,18 @@ Creation of the Database schema: `database/schema.sql`.
 ### Problems
 * Data Types not optimal selected (e.g. VARCHAR length)
 
+# Setup of database by Docker
+### What ChatGPT did?
+* Generated the docker-compose.yml for us
+* Added missing variables etc.
+* Explained the difference between docker-compose/ dockerfile
+
+### What did we do?
+* Checked the script and changed the variables
+
+### Problems
+* Generated docker-compose.yml differed between conversations/ languages
+
 # Database import script (Python)
 Creation of an import script `import.py`.
 
