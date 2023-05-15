@@ -20,6 +20,7 @@ Creation of the Database schema: `database/schema.sql`.
 
 ### Problems
 * Data Types not optimal selected (e.g. VARCHAR length)
+* The username included "@'localhost'". This didn't within the database-container.
 
 # Setup of database by Docker
 ### What ChatGPT did?
@@ -56,3 +57,17 @@ Creation of an import script `import.py`.
 * Asking for Clean Code principles ChatGPT broke the database connection
 * ChatGPT assumed Postgres (psycopg2) first, we had to explicitly mention MySQL-DB (mysql-connector)
 * ChatGPT not understood that we wanted a `requirements.txt` file with needed modules
+
+# Spring-Boot project
+Creation of an spring boot application using maven
+
+### What ChatGPT did?
+* Explained how we can create a spring boot application using maven
+* 
+
+### What did we do?
+* remove local resource attribute from the generated command
+
+### Problems
+* command was set to search for a repository locally
+* 
