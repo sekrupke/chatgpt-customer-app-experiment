@@ -59,21 +59,24 @@ Creation of an import script `import.py`.
 * ChatGPT not understood that we wanted a `requirements.txt` file with needed modules
 
 # Spring-Boot project
-Creation of an spring boot application using maven
+Creation of a spring boot application using maven
 
 ### What ChatGPT did?
-* Explained how we can create a spring boot application using maven
-* Created code/classes and configuration files for a basic crud spring boot project
+* Explained how we can create a spring boot application using Maven and Spring Boot Initializer
+* Created code/classes and configuration files for a basic Spring Boot project with Mysql CRUD-Access
 * printed the required imports after asking for them
 * explained where to put the thymeleaf files and printed an example folder structure:
 ![Experiment Overview](./doc_images/folder_structure.png)
+* suggested a basic html site (Thymeleaf) for customer display
 * created the config to access the local database
 * created the getter and setter for the customer variables, which where "omitted for brevity"
 
 ### What did we do?
-* remove local resource attribute from the maven command
-* local maven setup troubleshooting
+* remove local resource attribute from the Maven command
+* local Maven setup troubleshooting
+  * added missing dependencies with versions
+  * maven config and IDE setup
 
 ### Problems
-* initial maven command was set to search for a repository locally
-* import statements missing in the code examples 
+* initial Maven command was set to search for a Maven archetype locally
+* import statements and dependencies missing in the code examples
