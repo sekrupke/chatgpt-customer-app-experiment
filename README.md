@@ -63,11 +63,17 @@ Creation of an spring boot application using maven
 
 ### What ChatGPT did?
 * Explained how we can create a spring boot application using maven
-* 
+* Created code/classes and configuration files for a basic crud spring boot project
+* printed the required imports after asking for them
+* explained where to put the thymeleaf files and printed an example folder structure:
+![Experiment Overview](./doc_images/folder_structure.png)
+* created the config to access the local database
+* created the getter and setter for the customer variables, which where "omitted for brevity"
 
 ### What did we do?
-* remove local resource attribute from the generated command
+* remove local resource attribute from the maven command
+* local maven setup troubleshooting
 
 ### Problems
-* command was set to search for a repository locally
-* 
+* initial maven command was set to search for a repository locally
+* import statements missing in the code examples 
