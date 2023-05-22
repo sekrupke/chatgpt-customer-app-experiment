@@ -67,7 +67,7 @@ Creation of a spring boot application using maven
 * printed the required imports after asking for them
 * explained where to put the thymeleaf files and printed an example folder structure:
 ![Experiment Overview](./doc_images/folder_structure.png)
-* suggested a basic html site (Thymeleaf) 
+* suggested a basic html sites (Thymeleaf) 
   * for customer display
   * form for customer insert
   * form for customer edit
@@ -90,7 +90,7 @@ Creation of a spring boot application using maven
 * incorrect docker-compose configuration for MySQL
 * thymeleaf bindings were not correct
   ![Incorrect Thymeleaf Bindings](./doc_images/thymeleaf_error.png)
-* Supplied source code skips out some html fields (e.g. last x table columns) for saving tokens
+* Supplied source code skips some html fields (e.g. last x table columns) for saving tokens
 * Required fields in edit form differ, only first 3 were marked as required
 
 # Styling of the Thymeleaf Website
@@ -100,7 +100,8 @@ Creation of a spring boot application using maven
 * edited the source code to add nicer table formatting
 * Changed the "New Customer" link to a button with custom style
 * Generated a custom style for all buttons
-  * Delete button was styled red by itself 
+  * Delete button was styled red by itself
+* Experiment: Changing stylesheet colors to a known red beverage company worked
 
 ### What did we do?
 * Fixed error that stylesheet was not included and placed the right way
