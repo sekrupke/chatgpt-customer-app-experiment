@@ -3,10 +3,11 @@
 <head>
    <meta charset="UTF-8">
    <title>Customer List</title>
+   <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
 <h1>Customer List</h1>
-<a th:href="@{/customers/new}">Create New Customer</a>
+<a th:href="@{/customers/new}" class="new-customer-button">New Customer</a>
 <table>
    <thead>
    <tr>

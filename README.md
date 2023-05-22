@@ -96,9 +96,16 @@ Creation of a spring boot application using maven
 # Styling of the Thymeleaf Website
 ### What ChatGPT did?
 * gave as CSS style source code and hint to add style in HTML files
+* answered questions to stylesheet placement in directory (but not correct)
+* edited the source code to add nicer table formatting
+* Changed the "New Customer" link to a button with custom style
+* Generated a custom style for all buttons
+  * Delete button was styled red by itself 
 
 ### What did we do?
-* 
+* Fixed error that stylesheet was not included and placed the right way
+* Included style sheet in html thymeleaf
 
 ### Problems
-* Generated CSS that not fits the design we wanted at all (we gave him a brand name)
+* First generated CSS Style not fit the design we wanted at all (we gave him a brand name)
+* Style was first not found on website (404), style link and placement of style.css was false
