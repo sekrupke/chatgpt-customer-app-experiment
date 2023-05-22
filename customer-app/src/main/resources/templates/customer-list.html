@@ -6,6 +6,7 @@
 </head>
 <body>
 <h1>Customer List</h1>
+<a th:href="@{/customers/new}">Create New Customer</a>
 <table>
    <thead>
    <tr>
@@ -24,6 +25,7 @@
       <th>Fax</th>
       <th>Email</th>
       <th>Newsletter</th>
+      <th>Actions</th>
    </tr>
    </thead>
    <tbody>
@@ -43,6 +45,10 @@
       <td th:text="${customer.fax}"></td>
       <td th:text="${customer.email}"></td>
       <td th:text="${customer.newsletter}"></td>
+      <td>
+         <a th:href="@{/customers/edit/{id}(id=${customer.id})}">Edit</a>
+         <a th:href="@{/customers/delete/{id}(id=${customer.id})}">Delete</a>
+      </td>
    </tr>
    </tbody>
 </table>

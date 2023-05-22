@@ -63,20 +63,42 @@ Creation of a spring boot application using maven
 
 ### What ChatGPT did?
 * Explained how we can create a spring boot application using Maven and Spring Boot Initializer
-* Created code/classes and configuration files for a basic Spring Boot project with Mysql CRUD-Access
+* Created code/classes and configuration files for a basic Spring Boot project with MySQL CRUD-Access
 * printed the required imports after asking for them
 * explained where to put the thymeleaf files and printed an example folder structure:
 ![Experiment Overview](./doc_images/folder_structure.png)
-* suggested a basic html site (Thymeleaf) for customer display
+* suggested a basic html site (Thymeleaf) 
+  * for customer display
+  * form for customer insert
+  * form for customer edit
+  * added button for deletion
 * created the config to access the local database
 * created the getter and setter for the customer variables, which where "omitted for brevity"
+* Fixed the id generation strategy (modifying table script, editing entity in source code)
 
 ### What did we do?
 * remove local resource attribute from the Maven command
 * local Maven setup troubleshooting
   * added missing dependencies with versions
   * maven config and IDE setup
+* troubleshooting docker-compose MySQL database creation
+* edited the thymeleaf templates as the bindings were not correct
 
 ### Problems
 * initial Maven command was set to search for a Maven archetype locally
 * import statements and dependencies missing in the code examples
+* incorrect docker-compose configuration for MySQL
+* thymeleaf bindings were not correct
+  ![Incorrect Thymeleaf Bindings](./doc_images/thymeleaf_error.png)
+* Supplied source code skips out some html fields (e.g. last x table columns) for saving tokens
+* Required fields in edit form differ, only first 3 were marked as required
+
+# Styling of the Thymeleaf Website
+### What ChatGPT did?
+* gave as CSS style source code and hint to add style in HTML files
+
+### What did we do?
+* 
+
+### Problems
+* Generated CSS that not fits the design we wanted at all (we gave him a brand name)

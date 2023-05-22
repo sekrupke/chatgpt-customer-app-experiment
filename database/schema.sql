@@ -1,3 +1,5 @@
+CREATE DATABASE customerDB;
+
 CREATE USER IF NOT EXISTS 'admin' IDENTIFIED BY 'password1234!ABC';
 
 GRANT ALL PRIVILEGES ON customerDB.* TO 'admin';
@@ -7,7 +9,7 @@ FLUSH PRIVILEGES;
 USE customerDB;
 
 CREATE TABLE customers (
-                           id INT PRIMARY KEY,
+                           id INT PRIMARY KEY AUTO_INCREMENT,
                            salutation VARCHAR(10),
                            title VARCHAR(150),
                            first_name VARCHAR(150),

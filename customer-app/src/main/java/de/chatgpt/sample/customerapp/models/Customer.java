@@ -1,8 +1,7 @@
 package de.chatgpt.sample.customerapp.models;
 import java.time.LocalDate;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -10,7 +9,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Customer {
 
     @Id
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String salutation;
     private String title;
@@ -31,7 +31,7 @@ public class Customer {
     private boolean newsletter;
 
     // Getters
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -92,7 +92,7 @@ public class Customer {
     }
 
     // Setters
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
