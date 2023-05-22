@@ -110,3 +110,6 @@ Creation of a spring boot application using maven
 ### Problems
 * First generated CSS Style not fit the design we wanted at all (we gave him a brand name)
 * Style was first not found on website (404), style link and placement of style.css was false
+
+# Final results
+The final results will be shown here...
