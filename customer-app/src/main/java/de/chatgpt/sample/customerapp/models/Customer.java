@@ -1,6 +1,7 @@
 package de.chatgpt.sample.customerapp.models;
 import java.time.LocalDate;
 import javax.persistence.*;
+//import javax.val
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -24,8 +25,11 @@ public class Customer {
     private String houseNumber;
     private String postalCode;
     private String city;
+    //@Pattern(regexp = "[0-9]{10}", message = "Mobile number must be a 10-digit number")
     private String phone;
+    //@Pattern(regexp = "[0-9]{10}", message = "Phone number must be a 10-digit number")
     private String mobile;
+    //@Pattern(regexp = "[0-9]{10}", message = "Fax number must be a 10-digit number")
     private String fax;
     private String email;
     private boolean newsletter;
