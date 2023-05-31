@@ -111,5 +111,30 @@ Creation of a spring boot application using maven
 * First generated CSS Style not fit the design we wanted at all (we gave him a brand name)
 * Style was first not found on website (404), style link and placement of style.css was false
 
+# Added validation to the website and controller
+### What ChatGPT did?
+* Suggested validation for Thymleleaf website
+* Added @Pattern validation in Customer class
+* Added validation evaluation in CustomerController
+* Helped with needed dependencies (validation-api)
+
+### What did we do?
+* Fixed thymeleaf bindings
+* Added dependency for validation and changed scope
+
+### Problems
+* Wrong Thymeleaf bindings were used
+* ChatGPT was not available sometimes
+
+# Unit tests for Spring Boot Application
+### What ChatGPT did?
+* Generated CustomerController unit test
+
+### What did we do?
+* ...
+
+### Problems
+* ChatGPT assumed a CustomerService, which is not present
+
 # Final results
 The final results will be shown here...

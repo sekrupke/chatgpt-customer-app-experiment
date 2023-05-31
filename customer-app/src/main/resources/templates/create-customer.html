@@ -38,17 +38,17 @@
     <div class="form-group">
         <label for="mobile">Mobile:</label>
         <input type="text" id="mobile" name="mobile" th:field="*{customer.mobile}" pattern="[0-9]{10}" required>
-        <small class="error-message" th:if="${#fields.hasErrors('mobile')}" th:errors="*{customer.mobile}"></small>
+        <small class="error-message" th:if="${#fields.hasErrors('customer.mobile')}" th:errors="*{customer.mobile}"></small>
     </div>
     <div class="form-group">
         <label for="phone">Phone:</label>
         <input type="text" id="phone" name="phone" th:field="*{customer.phone}" pattern="[0-9]{10}" required>
-        <small class="error-message" th:if="${#fields.hasErrors('phone')}" th:errors="*{customer.phone}"></small>
+        <small class="error-message" th:if="${#fields.hasErrors('customer.phone')}" th:errors="*{customer.phone}"></small>
     </div>
     <div class="form-group">
         <label for="fax">Fax:</label>
         <input type="text" id="fax" name="fax" th:field="*{customer.fax}" pattern="[0-9]{10}" required>
-        <small class="error-message" th:if="${#fields.hasErrors('fax')}" th:errors="*{customer.fax}"></small>
+        <small class="error-message" th:if="${#fields.hasErrors('customer.fax')}" th:errors="*{customer.fax}"></small>
     </div>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email">
