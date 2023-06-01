@@ -33,7 +33,7 @@ public class CustomerControllerTest {
         List<Customer> customers = new ArrayList<>();
         customers.add(new Customer());
         customers.add(new Customer());
-        when(customerController.createCustomer()).thenReturn(customers);
+        //when(customerController.createCustomer()).thenReturn(customers);
         mockMvc.perform(get("/customers"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("customer-list"))
