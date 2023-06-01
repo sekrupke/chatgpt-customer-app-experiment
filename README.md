@@ -1,5 +1,5 @@
 # chatgpt-customer-app-experiment
-This is a basic application that was developed as an experiment for using ChatGPT for programming.
+This is a basic application that was developed as an experiment for using ChatGPT for programming. As technology Spring Boot Framework with Java and Thymeleaf is used.
 
 # Experiment Overview
 ![Experiment Overview](overview.png)
