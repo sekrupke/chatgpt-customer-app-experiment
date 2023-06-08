@@ -131,10 +131,12 @@ Creation of a spring boot application using maven
 * Generated CustomerController unit test
 
 ### What did we do?
-* ...
+* Ask ChatGPT in different ways to generate a test which mocks the database. It took me many tries. Probably about 10 attempts. 
 
 ### Problems
 * ChatGPT assumed a CustomerService, which is not present
+* ChatGPT expected that a Database is up and running
+* ChatGPT didn't remove testdata from the database, so the test failed in second run
 
 # Final results
 A minimal running Customer Application with a dockerized database was created. The use cases Show, Create, Update, Delete were realized. Also, a basic validation for phone numbers was implemented.
