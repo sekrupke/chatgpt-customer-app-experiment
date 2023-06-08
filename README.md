@@ -129,6 +129,7 @@ Creation of a spring boot application using maven
 # Unit tests for Spring Boot Application
 ### What ChatGPT did?
 * Generated CustomerController unit test
+* Created a test that accessed the real database (with H2 and JPAData Test)
 
 ### What did we do?
 * Ask ChatGPT in different ways to generate a test which mocks the database. It took me many tries. Probably about 10 attempts. 
@@ -158,12 +159,29 @@ The screenshots show the final results:
 The evaluation of the experiment was done at the end of the experiment:
 
 ### Main Advantages of ChatGPT
-
+* Additional tooling for software development (better than Stackoverflow or Google)
+  * It is possible to ask for a more specific solution
+  * The answer can be optimized
+  * A context can be supplied, e.g. the source code
+* Also helps in the concept phase, e.g. the project structure
+* Good tool for learning new concepts
+* Very useful when the programming language is not known well, but the concepts are clear
+  * Example: Python insert script without prior knowledge of Python language details
 
 ### Main Disadvantages of ChatGPT
-
+* ChatGPT made up things, e.g. a CustomerService that does not exist (Halluzinations)
+* At a specific point ChatGPT can't remember the context anymore
+* A lot of little uncertainties and errors that ChatGPT sometimes cannot know
 
 ### Problems encountered with ChatGPT
-
+* Without technological knowledge it is very hard to create a running application
+  * Problems, as soon as failures occur
+  * When errors happen, ChatGPT need detailed context to help
+* ChatGPT seems to understand the problem well, but could not fix it in the end
 
 ### Outlook
+* It is important to understand ChatGPT and how it works (statistics) to evaluate answers
+* ChatGPT is an important new tool for software development that helps to solve problems 
+* Simple, repeated development tasks can be supported by ChatGPT (save time and cost)
+* ChatGPT allows a faster start in projects and offers possibilities for rapid prototyping
+* ChatGPT is not a human, it is a text generator and cannot replace human individuals or experience
