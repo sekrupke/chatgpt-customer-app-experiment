@@ -6,56 +6,58 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
-<h1>Edit Customer</h1>
-<form th:action="@{/customers/edit/{id}(id=${customer.id})}" method="post">
-    <input type="hidden" th:field="*{customer.id}">
-    <label for="salutation">Salutation:</label>
-    <input type="text" id="salutation" th:field="*{customer.salutation}" required>
-    <br>
-    <label for="title">Title:</label>
-    <input type="text" id="title" th:field="*{customer.title}">
-    <br>
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" th:field="*{customer.firstName}" required>
-    <br>
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" th:field="*{customer.lastName}" required>
-    <br>
-    <label for="birthDate">Birth Date:</label>
-    <input type="date" id="birthDate" th:field="*{customer.birthDate}">
-    <br>
-    <label for="street">Street:</label>
-    <input type="text" id="street" th:field="*{customer.street}">
-    <br>
-    <label for="houseNumber">House Number:</label>
-    <input type="text" id="houseNumber" th:field="*{customer.houseNumber}">
-    <br>
-    <label for="postalCode">Postal Code:</label>
-    <input type="text" id="postalCode" th:field="*{customer.postalCode}">
-    <br>
-    <label for="city">City:</label>
-    <input type="text" id="city" th:field="*{customer.city}">
-    <br>
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" th:field="*{customer.phone}">
-    <br>
-    <label for="mobile">Mobile:</label>
-    <input type="text" id="mobile" th:field="*{customer.mobile}">
-    <br>
-    <label for="fax">Fax:</label>
-    <input type="text" id="fax" th:field="*{customer.fax}">
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" th:field="*{customer.email}">
-    <br>
-    <label for="newsletter">Newsletter:</label>
-    <input type="checkbox" id="newsletter" th:field="*{customer.newsletter}">
-    <br>
+<div class="container">
+    <h1>Edit Customer</h1>
+    <form th:action="@{/customers/edit/{id}(id=${customer.id})}" method="post">
+        <input type="hidden" th:field="*{customer.id}">
+        <label for="salutation">Salutation:</label>
+        <input type="text" id="salutation" th:field="*{customer.salutation}" required>
+        <br>
+        <label for="title">Title:</label>
+        <input type="text" id="title" th:field="*{customer.title}">
+        <br>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" th:field="*{customer.firstName}" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" th:field="*{customer.lastName}" required>
+        <br>
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" th:field="*{customer.birthDate}">
+        <br>
+        <label for="street">Street:</label>
+        <input type="text" id="street" th:field="*{customer.street}">
+        <br>
+        <label for="houseNumber">House Number:</label>
+        <input type="text" id="houseNumber" th:field="*{customer.houseNumber}">
+        <br>
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" th:field="*{customer.postalCode}">
+        <br>
+        <label for="city">City:</label>
+        <input type="text" id="city" th:field="*{customer.city}">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" th:field="*{customer.phone}">
+        <br>
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" th:field="*{customer.mobile}">
+        <br>
+        <label for="fax">Fax:</label>
+        <input type="text" id="fax" th:field="*{customer.fax}">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" th:field="*{customer.email}">
+        <br>
+        <label for="newsletter">Newsletter:</label>
+        <input type="checkbox" id="newsletter" th:field="*{customer.newsletter}">
+        <br>
 
-    <input type="submit" value="Update" class="button update-button">
-</form>
-<form th:action="@{/customers/delete/{id}(id=${customer.id})}" method="get">
-    <button class="button, delete-button" type="submit">Delete</button>
-</form>
+        <input type="submit" value="Update" class="button update-button">
+    </form>
+    <form th:action="@{/customers/delete/{id}(id=${customer.id})}" method="get">
+        <button class="button, delete-button" type="submit">Delete</button>
+    </form>
+</div>
 </body>
 </html>
